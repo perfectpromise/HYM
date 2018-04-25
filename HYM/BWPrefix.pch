@@ -1,0 +1,29 @@
+//
+//  BWPrefix.pch
+//  BeadWallet
+//
+//  Created by LWF on 17/7/19.
+//  Copyright © 2017年 贾富珍. All rights reserved.
+//
+
+#ifndef BWPrefix_pch
+#define BWPrefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* BWPrefix_pch */
+
+#ifdef __OBJC__
+#import "BWDefine.h"
+#import "GW_TextHelper.h"
+#import "UIImage+Resizeable.h"
+#import "BWLog.h"
+#import "BWSingleton.h"
+#import "YYModel.h"
+#import "Masonry.h"
+#import <objc/runtime.h>
+#import "SVProgressHUD.h"
+#import "LKDBHelper.h"
+
+#endif
