@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserListCell" id="KGk-i7-Jjw" userLabel="HomeListCell" customClass="HomeListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_sell" translatesAutoresizingMaskIntoConstraints="NO" id="a4N-UK-eMM" customClass="home_sell">
+                        <rect key="frame" x="23" y="18" width="17" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="3yx-lu-J7r"/>
+                            <constraint firstAttribute="width" constant="17" id="8oQ-Ax-b8h"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="变现" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msv-0x-wr4">
+                        <rect key="frame" x="55" y="17" width="200" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="ajY-SS-KYr"/>
+                            <constraint firstAttribute="width" constant="200" id="gl3-h3-1ZG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="a4N-UK-eMM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="0FQ-fT-a9H"/>
+                    <constraint firstItem="msv-0x-wr4" firstAttribute="leading" secondItem="a4N-UK-eMM" secondAttribute="trailing" constant="15" id="tb7-rp-zSb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="msv-0x-wr4" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="3F0-rk-fDW"/>
+                <constraint firstItem="a4N-UK-eMM" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="Tfh-Zn-uAc"/>
+            </constraints>
+            <connections>
+                <outlet property="iconImg" destination="a4N-UK-eMM" id="xJv-HC-pif"/>
+                <outlet property="nameLbl" destination="msv-0x-wr4" id="thq-wa-Dmw"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="home_sell" width="17" height="18"/>
+    </resources>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelectedCollectionViewCell" id="gTV-IL-0wX" customClass="SelectedCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joke_cool" translatesAutoresizingMaskIntoConstraints="NO" id="UhA-ir-jfv">
+                        <rect key="frame" x="10" y="5" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="043-Mq-irD"/>
+                            <constraint firstAttribute="width" constant="60" id="sLw-D1-Pb6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="单位换算" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyH-JS-fXG">
+                        <rect key="frame" x="0.0" y="70" width="80" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="8n6-Ts-9p8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="UhA-ir-jfv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="B8F-Qn-0oO"/>
+                <constraint firstAttribute="trailing" secondItem="gyH-JS-fXG" secondAttribute="trailing" id="Ie7-YO-LNr"/>
+                <constraint firstAttribute="trailing" secondItem="UhA-ir-jfv" secondAttribute="trailing" constant="10" id="Ncv-Zh-SzL"/>
+                <constraint firstItem="UhA-ir-jfv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="W4b-zj-aWT"/>
+                <constraint firstAttribute="bottom" secondItem="gyH-JS-fXG" secondAttribute="bottom" id="hXz-OH-CvK"/>
+                <constraint firstItem="gyH-JS-fXG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="otH-VN-Bcj"/>
+            </constraints>
+            <connections>
+                <outlet property="iconImg" destination="UhA-ir-jfv" id="HnJ-wz-HFM"/>
+                <outlet property="titleLbl" destination="gyH-JS-fXG" id="orq-YL-VWp"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="joke_cool" width="60" height="60"/>
+    </resources>
+</document>
