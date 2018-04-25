@@ -16,7 +16,7 @@
 		E42216D61FE8CD2600DF1722 /* ListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E42216CF1FE8CD2600DF1722 /* ListViewCell.xib */; };
 		E42216E11FE8CEB000DF1722 /* SelectedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E42216DE1FE8CEB000DF1722 /* SelectedCollectionViewCell.m */; };
 		E42216E21FE8CEB000DF1722 /* SelectedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E42216E01FE8CEB000DF1722 /* SelectedCollectionViewCell.xib */; };
-		E4482FE3204D1A0D001242C6 /* RespSearchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E4482FE2204D1A0D001242C6 /* RespSearchItem.m */; };
+		E438062A2090556600B0B283 /* RespSearchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E43806292090556600B0B283 /* RespSearchItem.m */; };
 		E4524BBA2005B3C900B29B51 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4524BAF2005B3C900B29B51 /* AccountViewController.m */; };
 		E4524BBB2005B3C900B29B51 /* AddAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4524BB12005B3C900B29B51 /* AddAccountViewController.m */; };
 		E4524BBC2005B3C900B29B51 /* LKAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E4524BB42005B3C900B29B51 /* LKAccountModel.m */; };
@@ -85,8 +85,8 @@
 		E42216DE1FE8CEB000DF1722 /* SelectedCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedCollectionViewCell.m; sourceTree = "<group>"; };
 		E42216DF1FE8CEB000DF1722 /* SelectedCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedCollectionViewCell.h; sourceTree = "<group>"; };
 		E42216E01FE8CEB000DF1722 /* SelectedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedCollectionViewCell.xib; sourceTree = "<group>"; };
-		E4482FE1204D1A0D001242C6 /* RespSearchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RespSearchItem.h; sourceTree = "<group>"; };
-		E4482FE2204D1A0D001242C6 /* RespSearchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RespSearchItem.m; sourceTree = "<group>"; };
+		E43806282090556600B0B283 /* RespSearchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RespSearchItem.h; sourceTree = "<group>"; };
+		E43806292090556600B0B283 /* RespSearchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RespSearchItem.m; sourceTree = "<group>"; };
 		E4524BAE2005B3C900B29B51 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
 		E4524BAF2005B3C900B29B51 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 		E4524BB02005B3C900B29B51 /* AddAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAccountViewController.h; sourceTree = "<group>"; };
@@ -232,7 +232,7 @@
 		E42216C71FE8CD2600DF1722 /* Platform */ = {
 			isa = PBXGroup;
 			children = (
-				E4482FE0204D1A0D001242C6 /* Model */,
+				E43806272090556600B0B283 /* Model */,
 				E42216C81FE8CD2600DF1722 /* Controllers */,
 				E42216CC1FE8CD2600DF1722 /* Views */,
 			);
@@ -261,14 +261,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		E4482FE0204D1A0D001242C6 /* Model */ = {
+		E43806272090556600B0B283 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E4482FE1204D1A0D001242C6 /* RespSearchItem.h */,
-				E4482FE2204D1A0D001242C6 /* RespSearchItem.m */,
+				E43806282090556600B0B283 /* RespSearchItem.h */,
+				E43806292090556600B0B283 /* RespSearchItem.m */,
 			);
-			name = Model;
-			path = ../../../../OneKeySearch/OneKeySearch/Main/Select/Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		E4524BAC2005B3C900B29B51 /* Account */ = {
@@ -721,6 +720,7 @@
 				E49A49E51FE21B480065CE83 /* NSString+DES.m in Sources */,
 				E49A49E91FE21B480065CE83 /* UIImage+Resizeable.m in Sources */,
 				E49A49EA1FE21B480065CE83 /* UIImageView+AddCorner.m in Sources */,
+				E438062A2090556600B0B283 /* RespSearchItem.m in Sources */,
 				E4524BC12005B59D00B29B51 /* UIScrollView+EmptyDataSet.m in Sources */,
 				E49A49FC1FE21B480065CE83 /* Base64Util.m in Sources */,
 				E49A49E81FE21B480065CE83 /* UIImage+Color.m in Sources */,
@@ -756,7 +756,6 @@
 				E49A49F91FE21B480065CE83 /* BWLog.m in Sources */,
 				E4A76F9C20846AD900A33CCC /* HomeViewController.m in Sources */,
 				E4524BBE2005B3C900B29B51 /* NavButton.m in Sources */,
-				E4482FE3204D1A0D001242C6 /* RespSearchItem.m in Sources */,
 				E4025CCB200715C1008A88D2 /* AddLoanViewController.m in Sources */,
 				E49A49CE1FE21B480065CE83 /* MSTabBarController.m in Sources */,
 			);
