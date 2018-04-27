@@ -11,6 +11,11 @@
 		E4025CC82007125D008A88D2 /* LoanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4025CC72007125D008A88D2 /* LoanViewController.m */; };
 		E4025CCB200715C1008A88D2 /* AddLoanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4025CCA200715C1008A88D2 /* AddLoanViewController.m */; };
 		E4025CCF20071723008A88D2 /* LKLoanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E4025CCE20071723008A88D2 /* LKLoanModel.m */; };
+		E41B79B52092EB3800D8920C /* daiding.geojson in Resources */ = {isa = PBXBuildFile; fileRef = E41B79B02092EB3800D8920C /* daiding.geojson */; };
+		E41B79B62092EB3800D8920C /* jiaoyi.geojson in Resources */ = {isa = PBXBuildFile; fileRef = E41B79B12092EB3800D8920C /* jiaoyi.geojson */; };
+		E41B79B72092EB3800D8920C /* renzhen.geojson in Resources */ = {isa = PBXBuildFile; fileRef = E41B79B22092EB3800D8920C /* renzhen.geojson */; };
+		E41B79B82092EB3800D8920C /* qiandao.geojson in Resources */ = {isa = PBXBuildFile; fileRef = E41B79B32092EB3800D8920C /* qiandao.geojson */; };
+		E41B79B92092EB3800D8920C /* jieshu.geojson in Resources */ = {isa = PBXBuildFile; fileRef = E41B79B42092EB3800D8920C /* jieshu.geojson */; };
 		E42216D41FE8CD2600DF1722 /* PlatformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42216CA1FE8CD2600DF1722 /* PlatformViewController.m */; };
 		E42216D51FE8CD2600DF1722 /* ListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E42216CE1FE8CD2600DF1722 /* ListViewCell.m */; };
 		E42216D61FE8CD2600DF1722 /* ListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E42216CF1FE8CD2600DF1722 /* ListViewCell.xib */; };
@@ -72,6 +77,11 @@
 		E4025CCA200715C1008A88D2 /* AddLoanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddLoanViewController.m; sourceTree = "<group>"; };
 		E4025CCD20071723008A88D2 /* LKLoanModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKLoanModel.h; sourceTree = "<group>"; };
 		E4025CCE20071723008A88D2 /* LKLoanModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKLoanModel.m; sourceTree = "<group>"; };
+		E41B79B02092EB3800D8920C /* daiding.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = daiding.geojson; sourceTree = "<group>"; };
+		E41B79B12092EB3800D8920C /* jiaoyi.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jiaoyi.geojson; sourceTree = "<group>"; };
+		E41B79B22092EB3800D8920C /* renzhen.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = renzhen.geojson; sourceTree = "<group>"; };
+		E41B79B32092EB3800D8920C /* qiandao.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = qiandao.geojson; sourceTree = "<group>"; };
+		E41B79B42092EB3800D8920C /* jieshu.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jieshu.geojson; sourceTree = "<group>"; };
 		E42216C91FE8CD2600DF1722 /* PlatformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformViewController.h; sourceTree = "<group>"; };
 		E42216CA1FE8CD2600DF1722 /* PlatformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformViewController.m; sourceTree = "<group>"; };
 		E42216CD1FE8CD2600DF1722 /* ListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewCell.h; sourceTree = "<group>"; };
@@ -522,6 +532,11 @@
 		E4A76FA3208477EF00A33CCC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E41B79B12092EB3800D8920C /* jiaoyi.geojson */,
+				E41B79B32092EB3800D8920C /* qiandao.geojson */,
+				E41B79B22092EB3800D8920C /* renzhen.geojson */,
+				E41B79B02092EB3800D8920C /* daiding.geojson */,
+				E41B79B42092EB3800D8920C /* jieshu.geojson */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -607,8 +622,13 @@
 			files = (
 				E42216D61FE8CD2600DF1722 /* ListViewCell.xib in Resources */,
 				E4A76FA22084707000A33CCC /* HomeListCell.xib in Resources */,
+				E41B79B62092EB3800D8920C /* jiaoyi.geojson in Resources */,
 				E42216E21FE8CEB000DF1722 /* SelectedCollectionViewCell.xib in Resources */,
+				E41B79B72092EB3800D8920C /* renzhen.geojson in Resources */,
 				E496F3C31FE0BE7200F3C927 /* LaunchScreen.storyboard in Resources */,
+				E41B79B82092EB3800D8920C /* qiandao.geojson in Resources */,
+				E41B79B92092EB3800D8920C /* jieshu.geojson in Resources */,
+				E41B79B52092EB3800D8920C /* daiding.geojson in Resources */,
 				E496F3C01FE0BE7200F3C927 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

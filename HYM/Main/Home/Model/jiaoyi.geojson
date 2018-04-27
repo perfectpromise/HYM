@@ -1,6 +1,9 @@
 {
     "result":
     [{
+            "name":"KK交易所",
+            "url":"http://kkex.com"
+     },{
             "name":"BCF",
             "url":"http://cn.bittebcf.com/"
      },{
