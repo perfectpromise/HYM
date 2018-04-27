@@ -85,7 +85,10 @@
             "name":"CoinHot",
             "url":"https://coinhot.io"
      },{
-            "name":"TCE",
-            "url":"http://tce-coin.com"
+            "name":"SCC",
+            "url":"http://soccercoin.vlianmeng.org"
+     },{
+            "name":"UPS",
+            "url":"https://www.upsblock.com"
      }]
 }

@@ -1,6 +1,9 @@
 {
     "result":
     [{
+            "name":"链一",
+            "url":"https://www.bcones.com/v/login"
+     },{
             "name":"币村",
             "url":"http://www.bcunn.com"
      },{
@@ -27,5 +30,17 @@
      },{
             "name":"CoinMake",
             "url":"https://www.coinmake.com"
+     },{
+            "name":"中林链",
+            "url":"http://www.juzane.com"
+     },{
+            "name":"加密乐视币",
+            "url":"http://157110.xyz/Index.php"
+     },{
+            "name":"KFR",
+            "url":"http://www.kfr-coin.com"
+     },{
+            "name":"ITO",
+            "url":"http://www.po369.cn"
      }]
 }

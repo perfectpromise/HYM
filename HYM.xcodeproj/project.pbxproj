@@ -55,11 +55,6 @@
 		E4A76F9C20846AD900A33CCC /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A76F9B20846AD900A33CCC /* HomeViewController.m */; };
 		E4A76FA12084707000A33CCC /* HomeListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A76F9F2084707000A33CCC /* HomeListCell.m */; };
 		E4A76FA22084707000A33CCC /* HomeListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4A76FA02084707000A33CCC /* HomeListCell.xib */; };
-		E4A76FA92084782800A33CCC /* PlatUrl_5.geojson in Resources */ = {isa = PBXBuildFile; fileRef = E4A76FA42084782800A33CCC /* PlatUrl_5.geojson */; };
-		E4A76FAA2084782800A33CCC /* PlatUrl_2.geojson in Resources */ = {isa = PBXBuildFile; fileRef = E4A76FA52084782800A33CCC /* PlatUrl_2.geojson */; };
-		E4A76FAB2084782800A33CCC /* PlatUrl_3.geojson in Resources */ = {isa = PBXBuildFile; fileRef = E4A76FA62084782800A33CCC /* PlatUrl_3.geojson */; };
-		E4A76FAC2084782800A33CCC /* PlatUrl_1.geojson in Resources */ = {isa = PBXBuildFile; fileRef = E4A76FA72084782800A33CCC /* PlatUrl_1.geojson */; };
-		E4A76FAD2084782800A33CCC /* PlatUrl_4.geojson in Resources */ = {isa = PBXBuildFile; fileRef = E4A76FA82084782800A33CCC /* PlatUrl_4.geojson */; };
 		E4E212EE20073CD100FDB2DA /* LoanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E212ED20073CD100FDB2DA /* LoanCell.m */; };
 		E4E3DC67207C0BB3000F9BA6 /* UIWebView+TXInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E3DC66207C0BB3000F9BA6 /* UIWebView+TXInputView.m */; };
 /* End PBXBuildFile section */
@@ -165,11 +160,6 @@
 		E4A76F9E2084706F00A33CCC /* HomeListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeListCell.h; sourceTree = "<group>"; };
 		E4A76F9F2084707000A33CCC /* HomeListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeListCell.m; sourceTree = "<group>"; };
 		E4A76FA02084707000A33CCC /* HomeListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeListCell.xib; sourceTree = "<group>"; };
-		E4A76FA42084782800A33CCC /* PlatUrl_5.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlatUrl_5.geojson; sourceTree = "<group>"; };
-		E4A76FA52084782800A33CCC /* PlatUrl_2.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlatUrl_2.geojson; sourceTree = "<group>"; };
-		E4A76FA62084782800A33CCC /* PlatUrl_3.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlatUrl_3.geojson; sourceTree = "<group>"; };
-		E4A76FA72084782800A33CCC /* PlatUrl_1.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlatUrl_1.geojson; sourceTree = "<group>"; };
-		E4A76FA82084782800A33CCC /* PlatUrl_4.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlatUrl_4.geojson; sourceTree = "<group>"; };
 		E4E212EC20073CD100FDB2DA /* LoanCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoanCell.h; sourceTree = "<group>"; };
 		E4E212ED20073CD100FDB2DA /* LoanCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoanCell.m; sourceTree = "<group>"; };
 		E4E3DC65207C0BB3000F9BA6 /* UIWebView+TXInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWebView+TXInputView.h"; sourceTree = "<group>"; };
@@ -532,11 +522,6 @@
 		E4A76FA3208477EF00A33CCC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E4A76FA72084782800A33CCC /* PlatUrl_1.geojson */,
-				E4A76FA52084782800A33CCC /* PlatUrl_2.geojson */,
-				E4A76FA62084782800A33CCC /* PlatUrl_3.geojson */,
-				E4A76FA82084782800A33CCC /* PlatUrl_4.geojson */,
-				E4A76FA42084782800A33CCC /* PlatUrl_5.geojson */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -620,14 +605,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4A76FAB2084782800A33CCC /* PlatUrl_3.geojson in Resources */,
 				E42216D61FE8CD2600DF1722 /* ListViewCell.xib in Resources */,
 				E4A76FA22084707000A33CCC /* HomeListCell.xib in Resources */,
-				E4A76FAC2084782800A33CCC /* PlatUrl_1.geojson in Resources */,
 				E42216E21FE8CEB000DF1722 /* SelectedCollectionViewCell.xib in Resources */,
-				E4A76FAA2084782800A33CCC /* PlatUrl_2.geojson in Resources */,
-				E4A76FAD2084782800A33CCC /* PlatUrl_4.geojson in Resources */,
-				E4A76FA92084782800A33CCC /* PlatUrl_5.geojson in Resources */,
 				E496F3C31FE0BE7200F3C927 /* LaunchScreen.storyboard in Resources */,
 				E496F3C01FE0BE7200F3C927 /* Assets.xcassets in Resources */,
 			);

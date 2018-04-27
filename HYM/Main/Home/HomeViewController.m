@@ -117,9 +117,9 @@
     NSArray *titleArr = [NSArray arrayWithObjects:@"交易",@"签到",@"认证",
                          @"待定",@"结束",nil];
     
-    NSString *platformUrl = [NSString stringWithFormat:@"PlatUrl_%ld",(long)(indexPath.row+1)];
+    NSArray *platformArr = @[@"jiaoyi",@"qiandao",@"renzhen",@"daiding",@"jieshu"];
     PlatformViewController *platformCtrl = [PlatformViewController new];
-    platformCtrl.platformUrl = platformUrl;
+    platformCtrl.platformUrl = platformArr[indexPath.row];
     platformCtrl.hidesBottomBarWhenPushed = YES;
     platformCtrl.title = titleArr[indexPath.row];
     [self.navigationController pushViewController:platformCtrl animated:YES];

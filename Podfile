@@ -10,7 +10,7 @@ pod 'IQKeyboardManager'
 pod 'Masonry'
 pod 'SVProgressHUD'
 pod 'LKDBHelper'
-pod 'PGDatePicker'
+pod 'PGDatePicker', '~>1.5.2'
 pod 'XZPickView'
 
 end
