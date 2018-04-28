@@ -21,13 +21,19 @@
 		E42216D61FE8CD2600DF1722 /* ListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E42216CF1FE8CD2600DF1722 /* ListViewCell.xib */; };
 		E42216E11FE8CEB000DF1722 /* SelectedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E42216DE1FE8CEB000DF1722 /* SelectedCollectionViewCell.m */; };
 		E42216E21FE8CEB000DF1722 /* SelectedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E42216E01FE8CEB000DF1722 /* SelectedCollectionViewCell.xib */; };
-		E438062A2090556600B0B283 /* RespSearchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E43806292090556600B0B283 /* RespSearchItem.m */; };
 		E4524BBA2005B3C900B29B51 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4524BAF2005B3C900B29B51 /* AccountViewController.m */; };
 		E4524BBB2005B3C900B29B51 /* AddAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4524BB12005B3C900B29B51 /* AddAccountViewController.m */; };
 		E4524BBC2005B3C900B29B51 /* LKAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E4524BB42005B3C900B29B51 /* LKAccountModel.m */; };
 		E4524BBD2005B3C900B29B51 /* AccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4524BB72005B3C900B29B51 /* AccountCell.m */; };
 		E4524BBE2005B3C900B29B51 /* NavButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E4524BB92005B3C900B29B51 /* NavButton.m */; };
 		E4524BC12005B59D00B29B51 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E4524BBF2005B59D00B29B51 /* UIScrollView+EmptyDataSet.m */; };
+		E45E3E9E209416E000932C1D /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E3E9D209416E000932C1D /* RegisterViewController.m */; };
+		E45E3EAF20941A3400932C1D /* ReqBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E3EA420941A3400932C1D /* ReqBase.m */; };
+		E45E3EB020941A3400932C1D /* RespBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E3EA720941A3400932C1D /* RespBase.m */; };
+		E45E3EB120941A3400932C1D /* RespItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E3EA920941A3400932C1D /* RespItem.m */; };
+		E45E3EB220941A3400932C1D /* AFNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E3EAC20941A3400932C1D /* AFNetworkClient.m */; };
+		E45E3EB320941A3400932C1D /* NetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E3EAE20941A3400932C1D /* NetworkCache.m */; };
+		E45E3EB720941B2800932C1D /* ReqEobLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E3EB620941B2800932C1D /* ReqEobLogin.m */; };
 		E496F3B81FE0BE7200F3C927 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E496F3B71FE0BE7200F3C927 /* AppDelegate.m */; };
 		E496F3C01FE0BE7200F3C927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E496F3BF1FE0BE7200F3C927 /* Assets.xcassets */; };
 		E496F3C31FE0BE7200F3C927 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E496F3C11FE0BE7200F3C927 /* LaunchScreen.storyboard */; };
@@ -90,8 +96,6 @@
 		E42216DE1FE8CEB000DF1722 /* SelectedCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedCollectionViewCell.m; sourceTree = "<group>"; };
 		E42216DF1FE8CEB000DF1722 /* SelectedCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedCollectionViewCell.h; sourceTree = "<group>"; };
 		E42216E01FE8CEB000DF1722 /* SelectedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedCollectionViewCell.xib; sourceTree = "<group>"; };
-		E43806282090556600B0B283 /* RespSearchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RespSearchItem.h; sourceTree = "<group>"; };
-		E43806292090556600B0B283 /* RespSearchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RespSearchItem.m; sourceTree = "<group>"; };
 		E4524BAE2005B3C900B29B51 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
 		E4524BAF2005B3C900B29B51 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 		E4524BB02005B3C900B29B51 /* AddAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAccountViewController.h; sourceTree = "<group>"; };
@@ -104,6 +108,20 @@
 		E4524BB92005B3C900B29B51 /* NavButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavButton.m; sourceTree = "<group>"; };
 		E4524BBF2005B59D00B29B51 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
 		E4524BC02005B59D00B29B51 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
+		E45E3E9C209416E000932C1D /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		E45E3E9D209416E000932C1D /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		E45E3EA320941A3400932C1D /* ReqBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReqBase.h; sourceTree = "<group>"; };
+		E45E3EA420941A3400932C1D /* ReqBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReqBase.m; sourceTree = "<group>"; };
+		E45E3EA620941A3400932C1D /* RespBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RespBase.h; sourceTree = "<group>"; };
+		E45E3EA720941A3400932C1D /* RespBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RespBase.m; sourceTree = "<group>"; };
+		E45E3EA820941A3400932C1D /* RespItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RespItem.h; sourceTree = "<group>"; };
+		E45E3EA920941A3400932C1D /* RespItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RespItem.m; sourceTree = "<group>"; };
+		E45E3EAB20941A3400932C1D /* AFNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkClient.h; sourceTree = "<group>"; };
+		E45E3EAC20941A3400932C1D /* AFNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkClient.m; sourceTree = "<group>"; };
+		E45E3EAD20941A3400932C1D /* NetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCache.h; sourceTree = "<group>"; };
+		E45E3EAE20941A3400932C1D /* NetworkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCache.m; sourceTree = "<group>"; };
+		E45E3EB520941B2800932C1D /* ReqEobLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReqEobLogin.h; sourceTree = "<group>"; };
+		E45E3EB620941B2800932C1D /* ReqEobLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReqEobLogin.m; sourceTree = "<group>"; };
 		E496F3B31FE0BE7200F3C927 /* HYM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E496F3B61FE0BE7200F3C927 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E496F3B71FE0BE7200F3C927 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -232,7 +250,6 @@
 		E42216C71FE8CD2600DF1722 /* Platform */ = {
 			isa = PBXGroup;
 			children = (
-				E43806272090556600B0B283 /* Model */,
 				E42216C81FE8CD2600DF1722 /* Controllers */,
 				E42216CC1FE8CD2600DF1722 /* Views */,
 			);
@@ -259,15 +276,6 @@
 				E42216E01FE8CEB000DF1722 /* SelectedCollectionViewCell.xib */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		E43806272090556600B0B283 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				E43806282090556600B0B283 /* RespSearchItem.h */,
-				E43806292090556600B0B283 /* RespSearchItem.m */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		E4524BAC2005B3C900B29B51 /* Account */ = {
@@ -309,6 +317,82 @@
 				E4524BB92005B3C900B29B51 /* NavButton.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E45E3E9B209416C800932C1D /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				E45E3EB420941A8400932C1D /* Service */,
+				E45E3E9F2094198500932C1D /* Model */,
+				E45E3EA02094198B00932C1D /* View */,
+				E45E3E9C209416E000932C1D /* RegisterViewController.h */,
+				E45E3E9D209416E000932C1D /* RegisterViewController.m */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		E45E3E9F2094198500932C1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E45E3EA02094198B00932C1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E45E3EA120941A3400932C1D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E45E3EA220941A3400932C1D /* Request */,
+				E45E3EA520941A3400932C1D /* Response */,
+				E45E3EAA20941A3400932C1D /* Util */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E45E3EA220941A3400932C1D /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				E45E3EA320941A3400932C1D /* ReqBase.h */,
+				E45E3EA420941A3400932C1D /* ReqBase.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		E45E3EA520941A3400932C1D /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				E45E3EA620941A3400932C1D /* RespBase.h */,
+				E45E3EA720941A3400932C1D /* RespBase.m */,
+				E45E3EA820941A3400932C1D /* RespItem.h */,
+				E45E3EA920941A3400932C1D /* RespItem.m */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		E45E3EAA20941A3400932C1D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				E45E3EAB20941A3400932C1D /* AFNetworkClient.h */,
+				E45E3EAC20941A3400932C1D /* AFNetworkClient.m */,
+				E45E3EAD20941A3400932C1D /* NetworkCache.h */,
+				E45E3EAE20941A3400932C1D /* NetworkCache.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		E45E3EB420941A8400932C1D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E45E3EB520941B2800932C1D /* ReqEobLogin.h */,
+				E45E3EB620941B2800932C1D /* ReqEobLogin.m */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		E496F3AA1FE0BE7200F3C927 = {
@@ -366,6 +450,7 @@
 		E49A494C1FE21B460065CE83 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E45E3E9B209416C800932C1D /* Register */,
 				E4A76F9920846A6900A33CCC /* Home */,
 				E42216C71FE8CD2600DF1722 /* Platform */,
 				E4524BAC2005B3C900B29B51 /* Account */,
@@ -407,6 +492,7 @@
 		E49A49831FE21B480065CE83 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				E45E3EA120941A3400932C1D /* Network */,
 				E49A49841FE21B480065CE83 /* Category */,
 				E49A49981FE21B480065CE83 /* Controls */,
 				E49A499B1FE21B480065CE83 /* Macro */,
@@ -720,7 +806,7 @@
 				E49A49E51FE21B480065CE83 /* NSString+DES.m in Sources */,
 				E49A49E91FE21B480065CE83 /* UIImage+Resizeable.m in Sources */,
 				E49A49EA1FE21B480065CE83 /* UIImageView+AddCorner.m in Sources */,
-				E438062A2090556600B0B283 /* RespSearchItem.m in Sources */,
+				E45E3EB020941A3400932C1D /* RespBase.m in Sources */,
 				E4524BC12005B59D00B29B51 /* UIScrollView+EmptyDataSet.m in Sources */,
 				E49A49FC1FE21B480065CE83 /* Base64Util.m in Sources */,
 				E49A49E81FE21B480065CE83 /* UIImage+Color.m in Sources */,
@@ -731,6 +817,7 @@
 				E49A49E71FE21B480065CE83 /* NSString+MD5.m in Sources */,
 				E49A49FD1FE21B480065CE83 /* GTMBase64.m in Sources */,
 				E4A76FA12084707000A33CCC /* HomeListCell.m in Sources */,
+				E45E3EAF20941A3400932C1D /* ReqBase.m in Sources */,
 				E49A49EC1FE21B480065CE83 /* UIView+ExtendRegion.m in Sources */,
 				E49A49EB1FE21B480065CE83 /* UINavigationBar+Awesome.m in Sources */,
 				E4524BBA2005B3C900B29B51 /* AccountViewController.m in Sources */,
@@ -739,12 +826,16 @@
 				E496F3C61FE0BE7200F3C927 /* main.m in Sources */,
 				E49A49FE1FE21B480065CE83 /* MD5Encryption.m in Sources */,
 				E496F3B81FE0BE7200F3C927 /* AppDelegate.m in Sources */,
+				E45E3EB320941A3400932C1D /* NetworkCache.m in Sources */,
 				E42216D41FE8CD2600DF1722 /* PlatformViewController.m in Sources */,
 				E4524BBB2005B3C900B29B51 /* AddAccountViewController.m in Sources */,
 				E4524BBC2005B3C900B29B51 /* LKAccountModel.m in Sources */,
+				E45E3EB120941A3400932C1D /* RespItem.m in Sources */,
 				E49A49E11FE21B480065CE83 /* SingleWKWebViewController.m in Sources */,
+				E45E3EB220941A3400932C1D /* AFNetworkClient.m in Sources */,
 				E49A49ED1FE21B480065CE83 /* BWButon.m in Sources */,
 				E42216D51FE8CD2600DF1722 /* ListViewCell.m in Sources */,
+				E45E3EB720941B2800932C1D /* ReqEobLogin.m in Sources */,
 				E49A49CB1FE21B480065CE83 /* MSBaseScrollView.m in Sources */,
 				E49A49E61FE21B480065CE83 /* NSString+IDCard.m in Sources */,
 				E4E212EE20073CD100FDB2DA /* LoanCell.m in Sources */,
@@ -754,6 +845,7 @@
 				E4025CCF20071723008A88D2 /* LKLoanModel.m in Sources */,
 				E42216E11FE8CEB000DF1722 /* SelectedCollectionViewCell.m in Sources */,
 				E49A49F91FE21B480065CE83 /* BWLog.m in Sources */,
+				E45E3E9E209416E000932C1D /* RegisterViewController.m in Sources */,
 				E4A76F9C20846AD900A33CCC /* HomeViewController.m in Sources */,
 				E4524BBE2005B3C900B29B51 /* NavButton.m in Sources */,
 				E4025CCB200715C1008A88D2 /* AddLoanViewController.m in Sources */,

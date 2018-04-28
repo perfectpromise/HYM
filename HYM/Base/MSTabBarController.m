@@ -39,9 +39,9 @@
     //TarBar初始化,数据初始化
     NSMutableArray *titleArr = [NSMutableArray arrayWithObjects:@"首页",@"记账",@"借款",nil];
 
-    NSMutableArray *controllerArr = [NSMutableArray arrayWithObjects:@"HomeViewController",@"AccountViewController",@"LoanViewController",nil];
-    NSMutableArray *imgNormalArr = [NSMutableArray arrayWithObjects:@"tabBar_home",@"tabBar_find",@"tabBar_loan",nil];
-    NSMutableArray *imgSelectedArr = [NSMutableArray arrayWithObjects:@"tabBar_home_s",@"tabBar_find_s",@"tabBar_loan_s",nil];
+    NSMutableArray *controllerArr = [NSMutableArray arrayWithObjects:@"HomeViewController",@"AccountViewController",@"LoanViewController",@"RegisterViewController",nil];
+    NSMutableArray *imgNormalArr = [NSMutableArray arrayWithObjects:@"tabBar_home",@"tabBar_find",@"tabBar_loan",@"tabBar_home",nil];
+    NSMutableArray *imgSelectedArr = [NSMutableArray arrayWithObjects:@"tabBar_home_s",@"tabBar_find_s",@"tabBar_loan_s",@"tabBar_home_s",nil];
 
     //控制器初始化
     NSMutableArray *tabbarArr = [NSMutableArray array];

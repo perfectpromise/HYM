@@ -9,7 +9,7 @@
 #ifndef BWDefine_h
 #define BWDefine_h
 
-#define ServerIP            @"www.52youzhen.com"
+#define ServerIP            @"api.eobzz.com"
 
 #define DESKeyString        @"meiyouzy"
 

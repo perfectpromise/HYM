@@ -1,6 +1,24 @@
 {
     "result":
     [{
+            "name":"MLL",
+            "url":"http://www.mljs.ltd"
+     },{
+            "name":"HGBC",
+            "url":"http://hgbc.io"
+     },{
+            "name":"人气币",
+            "url":"http://www.renqibi.pro"
+     },{
+            "name":"MEX",
+            "url":"https://www.mex.link"
+     },{
+            "name":"虎链财经",
+            "url":"https://www.chainhoo.com"
+     },{
+            "name":"SUC",
+            "url":"http://www.dd.ocfans.com.cn"
+     },{
             "name":"GMA",
             "url":"http://www.tengweilh.com"
      },{

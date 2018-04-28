@@ -10,7 +10,7 @@
 #import "ListViewCell.h"
 
 #import "SingleWKWebViewController.h"
-#import "RespSearchItem.h"
+#import "RespItem.h"
 
 @interface PlatformViewController ()<UITableViewDelegate,UITableViewDataSource,ListItemCellDelegate>
 {

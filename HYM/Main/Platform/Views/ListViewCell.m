@@ -8,7 +8,7 @@
 
 #import "ListViewCell.h"
 #import "SelectedCollectionViewCell.h"
-#import "RespSearchItem.h"
+#import "RespItem.h"
 
 @implementation ListViewCell
 

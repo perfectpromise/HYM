@@ -10,7 +10,7 @@
 
 @interface BWSingleton : NSObject
 
-@property (nonatomic, strong) NSArray *searchKeyArray; //搜索
+@property (nonatomic, strong) NSString *token;      //token值
 
 + (BWSingleton *)sharedInstance;
 

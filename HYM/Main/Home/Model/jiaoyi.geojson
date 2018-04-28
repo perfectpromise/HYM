@@ -1,17 +1,20 @@
 {
     "result":
     [{
-            "name":"KK交易所",
-            "url":"http://kkex.com"
+            "name":"CIO",
+            "url":"http://www.ciocoin.cn"
      },{
-            "name":"BCF",
-            "url":"http://cn.bittebcf.com/"
+            "name":"CoinHot",
+            "url":"https://coinhot.io"
+     },{
+            "name":"LMA",
+            "url":"https://www.220my.com"
+     },{
+            "name":"币易",
+            "url":"https://www.be.top"
      },{
             "name":"ATC",
             "url":"http://www.97atc.com"
-     },{
-            "name":"TEP",
-            "url":"http://www.cointep.club"
      },{
             "name":"ATA",
             "url":"http://www.ata666.net"
@@ -25,6 +28,9 @@
             "name":"QTE量子能",
             "url":"http://119.147.139.42:8080/index/publics"
      },{
+            "name":"CSC",
+            "url":"http://www.csc-coin.com"
+     },{
             "name":"PCD",
             "url":"http://www.pcd-china.com"
      },{
@@ -37,29 +43,11 @@
             "name":"流量矿场",
             "url":"https://www.zjmalls.com"
      },{
-            "name":"LMA",
-            "url":"https://www.220my.com"
-     },{
             "name":"GCF",
             "url":"http://www.gcf-world.com"
      },{
             "name":"杰克币",
             "url":"http://www.jqqj88.com"
-     },{
-            "name":"BLC",
-            "url":"http://www.bangshiye.vip/"
-     },{
-            "name":"CIO",
-            "url":"http://www.ciocoin.cn"
-     },{
-            "name":"CSC",
-            "url":"http://www.csc-coin.com"
-     },{
-            "name":"NBC",
-            "url":"https://nbc.v67x.cn/index.php?&m=login"
-     },{
-            "name":"微公益",
-            "url":"http://www.scr360.com/"
      },{
             "name":"PCC",
             "url":"http://pcc.ccck88168.cn"
@@ -85,13 +73,10 @@
             "name":"比特坊",
             "url":"https://www.bitmill.vip"
      },{
-            "name":"CoinHot",
-            "url":"https://coinhot.io"
-     },{
             "name":"SCC",
             "url":"http://soccercoin.vlianmeng.org"
      },{
-            "name":"UPS",
-            "url":"https://www.upsblock.com"
+            "name":"BCF",
+            "url":"http://cn.bittebcf.com/"
      }]
 }
