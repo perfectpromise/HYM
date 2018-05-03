@@ -22,6 +22,9 @@
             "name":"FTC",
             "url":"http://www.sttzzy.com/Index.php/Home/Login/index.html"
      },{
+            "name":"ECT",
+            "url":"http://www.ect58.com"
+     },{
             "name":"黄金谷",
             "url":"http://www.op.ocfans.com.cn"
      },{
@@ -78,5 +81,17 @@
      },{
             "name":"BCF",
             "url":"http://cn.bittebcf.com/"
+     },{
+            "name":"EBC",
+            "url":"https://www.asiaebc.com"
+     },{
+            "name":"UPUC",
+            "url":"http://www.upuc8.com"
+     },{
+            "name":"COO",
+            "url":"http://ck15.cn"
+     },{
+            "name":"黄金谷",
+            "url":"https://liangu.io"
      }]
 }

@@ -54,12 +54,21 @@
     }
 }
 
-//登录
+/*登录
+ token&
+ 账户余额&
+ 最大登录客户端个数&
+ 最多获取号码数&
+ 单个客户端最多获取号码数&
+ 折扣
+ */
 - (void)smLogin{
 
     NSString *name = @"wust419";
     NSString *password = @"st5201314";
-    NSString *urlStr = [NSString stringWithFormat:@"http://api.eobzz.com/api/do.php?action=loginIn&name=%@&password=%@",name,password];
+    NSString *developKey = @"Developer=yzsmwj89ruhI00WmsZIlPA%3d%3d";
+
+    NSString *urlStr = [NSString stringWithFormat:@"http://api.shjmpt.com:9002/pubApi/uLogin?uName=%@&pWord=%@&Developer=",name,password];
     
     //获取到服务器的url地址
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlStr]
@@ -68,30 +77,34 @@
     
     NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
     NSString *respStr =  [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    BWLog(@"%@",respStr);
-    NSArray *respArr = [respStr componentsSeparatedByString:@"|"];
-    if (respArr.count == 2) {
-        if ([respArr[0] isEqualToString:@"1"]) {
-            [BWSingleton sharedInstance].token = respArr[1];
-            [SVProgressHUD showSuccessWithStatus:@"登录成功"];
-            
-            [self getUserInfo];
-        }else{
-            [SVProgressHUD showErrorWithStatus:respArr[1]];
-        }
+    BWLog(@"登录返回值：%@",respStr);
+    NSArray *respArr = [respStr componentsSeparatedByString:@"&"];
+    if (respArr.count == 7) {
+        [BWSingleton sharedInstance].token = respArr[0];
+        [SVProgressHUD showSuccessWithStatus:@"登录成功"];
+        
+//        [self getItems];
     }else{
         [SVProgressHUD showErrorWithStatus:@"登录失败"];
 
     }
 }
 
-/*获取个人信息
- 1.成功返回：1|余额|等级|批量取号数|用户类型
- 2.失败返回：0|错误信息
+/*获取项目
+ 
+ 正确返回:
+ 项目ID&项目名称&项目价格&项目类型\n项目ID&项目名称&项目价格&项目类型\n...
+ 
+ 其中项目类型解释如下：
+ 1. 表示此项目用于接收验证码
+ 2. 表示此项目用户发送短信
+ 3. 表示此项目即可接收验证码，也可以发送短信
+ 4. 表示可以接受多个验证码
+ 
  */
-- (void)getUserInfo{
+- (void)getItems{
 
-    NSString *urlStr = [NSString stringWithFormat:@"http://api.eobzz.com/api/do.php?action=getSummary&token=%@",[BWSingleton sharedInstance].token];
+    NSString *urlStr = [NSString stringWithFormat:@"http://api.shjmpt.com:9002/uGetItems?token=%@&tp=ut",[BWSingleton sharedInstance].token];
     
     //获取到服务器的url地址
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlStr]
@@ -104,22 +117,19 @@
 }
 
 /*获取手机号
- 可选参数：
- 1.phone=你要指定获取的号码,传入号码不正确的情况下,获取新号码.
- 2.phoneType=CMCC，CMCC是指移动，UNICOM是指联通，TELECOM是指电信
- 3.locationMatching、locationLevel、location三个必须一起使用。用来指定获取某个地区的号码
- 例：http://api.eobzz.com/api/do.php?action=getPhone&sid=项目ID&token=登录时返回的令牌&locationMatching=include&locationLevel=p&location=广东
- 注：location 参数为中文，必须要编码 上海 编码后为 %E4%B8%8A%E6%B5%B7
- 成功返回值：1|手机号
- 失败返回值：0|错误信息(系统暂时没有可用号码，请过3秒再重新取号|余额不足|其它错误信息)
- 如何一个手机号接收多条短信
- 第一条取出短信后，再调用获取手机号指定手机号调用实例：
- http://api.eobzz.com/api/do.php?action=getPhone&sid=项目id&phone=手机号&token=登录时返回的令牌
+ 参数名         必传    缺省值       描述
+ token          Y               登录token
+ ItemId         Y               项目代码
+ Count          N       1       获取数量 [不填默认1个]
+ Phone          N               指定号码获取 [不填则 随机]
+ Area           N               区域 [不填则 随机]
+ PhoneType      N       0       运营商 [不填为 0] 0 [随机] 1 [移动] 2 [联通] 3 [电信]
+ onlyKey        N               私人对接Key，与卡商直接对接
  */
 - (void)getPhone{
     
-    NSString *sid = @"35313";
-    NSString *urlStr = [NSString stringWithFormat:@"http://api.eobzz.com/api/do.php?action=getPhone&sid=%@&token=%@",sid,[BWSingleton sharedInstance].token];
+    NSString *sid = @"5";
+    NSString *urlStr = [NSString stringWithFormat:@"http://api.shjmpt.com:9002/pubApi/GetPhone?ItemId=%@&token=%@",sid,[BWSingleton sharedInstance].token];
     
     //获取到服务器的url地址
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlStr]
@@ -128,15 +138,12 @@
     
     NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
     NSString *respStr =  [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    BWLog(@"%@",respStr);
+    BWLog(@"获取手机号：%@",respStr);
     
-    NSArray *respArr = [respStr componentsSeparatedByString:@"|"];
-    if (respArr.count == 2) {
-        if ([respArr[0] isEqualToString:@"1"]) {
+    NSArray *respArr = [respStr componentsSeparatedByString:@";"];
+    if (respArr.count > 0) {
             [SVProgressHUD showSuccessWithStatus:@"获取成功"];
-            currentPhone = respArr[1];
-            [self getMessage];
-        }
+            currentPhone = respArr[0];
     }
 }
 

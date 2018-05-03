@@ -1,6 +1,12 @@
 {
     "result":
     [{
+            "name":"IBMA",
+            "url":"https://www.ibmavip.com"
+     },{
+            "name":"bbaex",
+            "url":"https://www.bbaex.com"
+     },{
             "name":"LEBC",
             "url":"http://pinban365.cn"
      },{
@@ -18,9 +24,6 @@
      },{
             "name":"BFW",
             "url":"http://www.coin018.com"
-     },{
-            "name":"ECT",
-            "url":"http://www.ect58.com"
      },{
             "name":"ENE",
             "url":"https://www.moteng365.com"

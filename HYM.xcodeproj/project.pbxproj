@@ -323,26 +323,10 @@
 			isa = PBXGroup;
 			children = (
 				E45E3EB420941A8400932C1D /* Service */,
-				E45E3E9F2094198500932C1D /* Model */,
-				E45E3EA02094198B00932C1D /* View */,
 				E45E3E9C209416E000932C1D /* RegisterViewController.h */,
 				E45E3E9D209416E000932C1D /* RegisterViewController.m */,
 			);
 			path = Register;
-			sourceTree = "<group>";
-		};
-		E45E3E9F2094198500932C1D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		E45E3EA02094198B00932C1D /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		E45E3EA120941A3400932C1D /* Network */ = {
