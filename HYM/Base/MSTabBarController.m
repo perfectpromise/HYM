@@ -37,7 +37,7 @@
     // Do any additional setup after loading the view from its nib.
     
     //TarBar初始化,数据初始化
-    NSMutableArray *titleArr = [NSMutableArray arrayWithObjects:@"首页",@"记账",@"借款",@"注册",nil];
+    NSMutableArray *titleArr = [NSMutableArray arrayWithObjects:@"首页",@"记账",@"借款"/*,@"注册"*/,nil];
 
     NSMutableArray *controllerArr = [NSMutableArray arrayWithObjects:@"HomeViewController",@"AccountViewController",@"LoanViewController",@"RegisterViewController",nil];
     NSMutableArray *imgNormalArr = [NSMutableArray arrayWithObjects:@"tabBar_home",@"tabBar_find",@"tabBar_loan",@"tabBar_home",nil];

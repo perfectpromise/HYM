@@ -11,7 +11,9 @@
 
 @interface RegisterViewController ()
 {
-    NSString *currentPhone;
+    NSString *currentPhone;  //当前获取到的手机号
+    NSString *itemID;        //项目ID
+
 }
 @end
 
@@ -23,6 +25,8 @@
     self.navigationItem.title = @"注册";
 
     [self createButton];
+    
+    itemID = @"5";
 }
 
 - (void)createButton{
@@ -90,31 +94,6 @@
     }
 }
 
-/*获取项目
- 
- 正确返回:
- 项目ID&项目名称&项目价格&项目类型\n项目ID&项目名称&项目价格&项目类型\n...
- 
- 其中项目类型解释如下：
- 1. 表示此项目用于接收验证码
- 2. 表示此项目用户发送短信
- 3. 表示此项目即可接收验证码，也可以发送短信
- 4. 表示可以接受多个验证码
- 
- */
-- (void)getItems{
-
-    NSString *urlStr = [NSString stringWithFormat:@"http://api.shjmpt.com:9002/uGetItems?token=%@&tp=ut",[BWSingleton sharedInstance].token];
-    
-    //获取到服务器的url地址
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlStr]
-                                                           cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
-                                                       timeoutInterval:5];
-    
-    NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-    NSString *respStr =  [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    BWLog(@"%@",respStr);
-}
 
 /*获取手机号
  参数名         必传    缺省值       描述
@@ -128,8 +107,7 @@
  */
 - (void)getPhone{
     
-    NSString *sid = @"5";
-    NSString *urlStr = [NSString stringWithFormat:@"http://api.shjmpt.com:9002/pubApi/GetPhone?ItemId=%@&token=%@",sid,[BWSingleton sharedInstance].token];
+    NSString *urlStr = [NSString stringWithFormat:@"http://api.shjmpt.com:9002/pubApi/GetPhone?ItemId=%@&token=%@",itemID,[BWSingleton sharedInstance].token];
     
     //获取到服务器的url地址
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlStr]
@@ -148,18 +126,48 @@
 }
 
 /*获取验证码
-  sid=项目id&phone=取出来的手机号&token=登录时返回的令牌&author=软件作者 用户名(这里是传作者注册时的用户名)。
- 
- 方法调用返回值示例：
- 1.成功返回值：1|短信内容
- 2. 失败返回值：0|错误信息
- 备注：当返回0|还没有接收到短信，请过3秒再试，请软件主动3秒再重新取短信内容。一般项目的短信在1分钟左右能取到，个别比较慢的也应该在3分钟左右能取到。所以重试间隔3秒的情况下一般循环获取20~60次之间即可。如果一超过60次取不到短信，可以加黑该手机号。
+ 参数名    必传    缺省值    描述
+ token    Y        登录token
+ ItemId    Y        项目ID
+ Phone    Y        获取的号码
  
  */
 - (void)getMessage{
     
-    NSString *sid = @"35313";
-    NSString *urlStr = [NSString stringWithFormat:@"http://api.eobzz.com/api/do.php?action=getMessage&sid=%@&phone=%@&token=%@",sid,currentPhone,[BWSingleton sharedInstance].token];
+    NSString *urlStr = [NSString stringWithFormat:@"http://api.shjmpt.com:9002/pubApi/GMessage?token=%@&ItemId=%@&Phone=%@",[BWSingleton sharedInstance].token,itemID,currentPhone];
+    
+    //获取到服务器的url地址
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlStr]
+                                                           cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
+                                                       timeoutInterval:5];
+    
+    NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    NSString *respStr =  [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    BWLog(@"%@",respStr);
+}
+
+
+/*释放全部号码
+ */
+- (void)releaseAllPhone{
+    
+    NSString *urlStr = [NSString stringWithFormat:@"http://api.shjmpt.com:9002/pubApi/ReleaseAllPhone?token=%@",[BWSingleton sharedInstance].token];
+    
+    //获取到服务器的url地址
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlStr]
+                                                           cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
+                                                       timeoutInterval:5];
+    
+    NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    NSString *respStr =  [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    BWLog(@"%@",respStr);
+}
+
+/*添加黑名单
+ */
+- (void)addBlackList{
+    
+    NSString *urlStr = [NSString stringWithFormat:@"http://api.shjmpt.com:9002/pubApi/AddBlack?token=%@&phoneList=%@-%@;",[BWSingleton sharedInstance].token,itemID,currentPhone];
     
     //获取到服务器的url地址
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlStr]
