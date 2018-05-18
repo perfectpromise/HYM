@@ -1,41 +1,20 @@
 {
     "result":
     [{
-            "name":"123Token",
-            "url":"http://www.123token.com"
+            "name":"香港TEX",
+            "url":"http://www.lavoz.top"
      },{
-            "name":"IBMA",
-            "url":"https://www.ibmavip.com"
+            "name":"Bitforex",
+            "url":"https://www.bitforex.com"
      },{
-            "name":"bbaex",
-            "url":"https://www.bbaex.com"
+            "name":"极交所",
+            "url":"http://www.ultraex.io"
+     },{
+            "name":"9币网",
+            "url":"https://9ex.io"
      },{
             "name":"LEBC",
             "url":"http://pinban365.cn"
-     },{
-            "name":"链一",
-            "url":"https://www.bcones.com/v/login"
-     },{
-            "name":"币村",
-            "url":"http://www.bcunn.com"
-     },{
-            "name":"Bibox",
-            "url":"https://www.bibox.com"
-     },{
-            "name":"新生币",
-            "url":"https://www.resmys.com"
-     },{
-            "name":"BFW",
-            "url":"http://www.coin018.com"
-     },{
-            "name":"ENE",
-            "url":"https://www.moteng365.com"
-     },{
-            "name":"Dididu",
-            "url":"https://i.dididu.com"
-     },{
-            "name":"coineal",
-            "url":"https://www.coineal.com"
      },{
             "name":"CoinMake",
             "url":"https://www.coinmake.com"
@@ -46,10 +25,16 @@
             "name":"加密乐视币",
             "url":"http://157110.xyz/Index.php"
      },{
-            "name":"KFR",
-            "url":"http://www.kfr-coin.com"
+            "name":"Bibox",
+            "url":"https://www.bibox.com"
      },{
-            "name":"ITO",
-            "url":"http://www.po369.cn"
+            "name":"VECT",
+            "url":"http://vectwallet.com"
+     },{
+            "name":"TSDT",
+            "url":"https://www.intltst.com"
+     },{
+            "name":"SSEC",
+            "url":"http://wumei.gzwrm.com/index.php/"
      }]
 }

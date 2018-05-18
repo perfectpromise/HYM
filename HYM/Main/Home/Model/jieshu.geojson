@@ -1,8 +1,44 @@
 {
     "result":
     [{
+            "name":"BCF",
+            "url":"http://cn.bittebcf.com/"
+     },{
+            "name":"PCD",
+            "url":"http://www.pcd-china.com"
+     },{
+            "name":"VAL",
+            "url":"http://nyaeg.cn"
+     },{
+            "name":"EBC",
+            "url":"https://www.asiaebc.com"
+     },{
+            "name":"CSC",
+            "url":"http://www.csc-coin.com"
+     },{
+            "name":"FTC",
+            "url":"http://www.sttzzy.com/Index.php/Home/Login/index.html"
+     },{
+            "name":"PCC",
+            "url":"http://pcc.ccck88168.cn"
+     },{
+            "name":"CED",
+            "url":"https://www.sh.xhsbank.com"
+     },{
+            "name":"ABL",
+            "url":"https://www.ensmeg.com"
+     },{
+            "name":"GCF",
+            "url":"http://www.gcf-world.com"
+     },{
             "name":"瑞克币",
             "url":"http://rickschina.zxzdm.net"
+     },{
+            "name":"YHC",
+            "url":"http://www.yhcoin.vip"
+     },{
+            "name":"ZPC",
+            "url":"https://www.ldgswlt.com"
      },{
             "name":"ETD",
             "url":"http://www.twsento.com"
@@ -10,23 +46,29 @@
             "name":"ZXC",
             "url":"https://zxcoin.com.cn/"
      },{
+            "name":"DMC",
+            "url":"http://www.dmc889.com"
+     },{
+            "name":"KFR",
+            "url":"http://www.kfr-coin.com"
+     },{
             "name":"GTC",
             "url":"http://a.gtc.la"
      },{
-            "name":"云比特",
-            "url":"http://www.cbt-coin2.com"
+            "name":"ITO",
+            "url":"http://www.po369.cn"
+     },{
+            "name":"CHE",
+            "url":"http://www.998yk.com"
+     },{
+            "name":"比特坊",
+            "url":"https://www.bitmill.vip"
      },{
             "name":"BTM",
             "url":"http://www.8hat.top"
      },{
-            "name":"STC",
-            "url":"http://www.52youzhen.com"
-     },{
             "name":"MSC",
             "url":"http://mediasharing.top"
-     },{
-            "name":"BLC",
-            "url":"http://www.bangshiye.vip/"
      },{
             "name":"NBC",
             "url":"https://nbc.v67x.cn/index.php?&m=login"
@@ -36,5 +78,14 @@
      },{
             "name":"UPS",
             "url":"https://www.upsblock.com"
+     },{
+            "name":"KDC",
+            "url":"http://kdcoins.cn"
+     },{
+            "name":"SBT",
+            "url":"http://www.sd.wx-tz.cn"
+     },{
+            "name":"ECT",
+            "url":"http://www.ect58.com"
      }]
 }

@@ -2,13 +2,19 @@
     "result":
     [{
             "name":"CIO",
-            "url":"http://www.ciocoin.cn"
+            "url":"http://www.ciocoin.net"
+     },{
+            "name":"CNHK",
+            "url":"https://www.cnhkcoin.com"
      },{
             "name":"CoinHot",
             "url":"https://coinhot.io"
      },{
             "name":"LMA",
             "url":"https://www.220my.com"
+     },{
+            "name":"HFA",
+            "url":"https://chain.worldhfa.com"
      },{
             "name":"币易",
             "url":"https://www.be.top"
@@ -19,26 +25,29 @@
             "name":"ATA",
             "url":"http://www.ata666.net"
      },{
-            "name":"FTC",
-            "url":"http://www.sttzzy.com/Index.php/Home/Login/index.html"
+            "name":"币村",
+            "url":"http://www.bcunn.com"
      },{
-            "name":"ECT",
-            "url":"http://www.ect58.com"
+            "name":"OKEX",
+            "url":"https://www.okb.com"
      },{
-            "name":"黄金谷",
-            "url":"http://www.op.ocfans.com.cn"
+            "name":"慧云网",
+            "url":"http://ce.hywbtc.com/"
+     },{
+            "name":"ENE",
+            "url":"https://www.moteng365.com"
+     },{
+            "name":"新生币",
+            "url":"https://www.resmys.com"
+     },{
+            "name":"云比特",
+            "url":"http://www.cbt-coin2.com"
      },{
             "name":"QTE量子能",
             "url":"http://119.147.139.42:8080/index/publics"
      },{
-            "name":"CSC",
-            "url":"http://www.csc-coin.com"
-     },{
-            "name":"PCD",
-            "url":"http://www.pcd-china.com"
-     },{
-            "name":"VAL",
-            "url":"http://nyaeg.cn"
+            "name":"黄金谷",
+            "url":"http://www.op.ocfans.com.cn"
      },{
             "name":"智慧魔方",
             "url":"http://www.mayxw.com"
@@ -46,23 +55,14 @@
             "name":"流量矿场",
             "url":"https://www.zjmalls.com"
      },{
-            "name":"GCF",
-            "url":"http://www.gcf-world.com"
-     },{
             "name":"杰克币",
             "url":"http://www.jqqj88.com"
-     },{
-            "name":"PCC",
-            "url":"http://pcc.ccck88168.cn"
      },{
             "name":"WBC",
             "url":"http://www.900jiu.com"
      },{
-            "name":"CED",
-            "url":"https://www.sh.xhsbank.com"
-     },{
             "name":"BTD",
-            "url":"http://www.zzx163.com"
+            "url":"https://www.54ybk.com"
      },{
             "name":"WSC",
             "url":"http://www.yuruizy.com/"
@@ -70,20 +70,8 @@
             "name":"GEC",
             "url":"https://gec.ve-china.com.cn"
      },{
-            "name":"CHE",
-            "url":"http://www.998yk.com"
-     },{
-            "name":"比特坊",
-            "url":"https://www.bitmill.vip"
-     },{
             "name":"SCC",
             "url":"http://soccercoin.vlianmeng.org"
-     },{
-            "name":"BCF",
-            "url":"http://cn.bittebcf.com/"
-     },{
-            "name":"EBC",
-            "url":"https://www.asiaebc.com"
      },{
             "name":"UPUC",
             "url":"http://www.upuc8.com"
@@ -91,7 +79,13 @@
             "name":"COO",
             "url":"http://ck15.cn"
      },{
-            "name":"黄金谷",
+            "name":"黄金链",
             "url":"https://liangu.io"
+     },{
+            "name":"事业帮交易",
+            "url":"http://www.blc365.cn"
+     },{
+            "name":"BLC收益领取",
+            "url":"http://www.bangshiye.vip/"
      }]
 }

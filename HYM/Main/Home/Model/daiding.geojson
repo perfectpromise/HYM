@@ -1,6 +1,60 @@
 {
     "result":
     [{
+            "name":"QBTC",
+            "url":"https://www.qbtc.com"
+     },{
+            "name":"教链",
+            "url":"http://jll.one"
+     },{
+            "name":"MBC",
+            "url":"https://mbikechain.com"
+     },{
+            "name":"VBC",
+            "url":"http://www.vbcchain.com"
+     },{
+            "name":"ECoin",
+            "url":"http://www.e-coin.org.cn"
+     },{
+            "name":"大公牛交易",
+            "url":"http://www.oax.com"
+     },{
+            "name":"Bitop",
+            "url":"https://bitop.io"
+     },{
+            "name":"币虎",
+            "url":"http://www.bhmm.com"
+     },{
+            "name":"LION",
+            "url":"http://www.lilioncoin.net"
+     },{
+            "name":"Bitkop",
+            "url":"https://bitkop.com"
+     },{
+            "name":"MKT",
+            "url":"http://mkt.ffmex.com"
+     },{
+            "name":"阿图纳拉",
+            "url":"http://wx.atunala.com"
+     },{
+            "name":"BTCBL",
+            "url":"http://www.btcbl.com"
+     },{
+            "name":"Matrix",
+            "url":"https://sweets.jiduobao.cc"
+     },{
+            "name":"利安交易所",
+            "url":"http://www.lianok.pro"
+     },{
+            "name":"Abullish",
+            "url":"http://www.abullish.com"
+     },{
+            "name":"BBS矿石链",
+            "url":"https://gw559.com"
+     },{
+            "name":"EXC",
+            "url":"http://excbtc.top"
+     },{
             "name":"GFC",
             "url":"http://www.gfcw.com"
      },{
@@ -21,6 +75,15 @@
      },{
             "name":"SUC",
             "url":"http://www.dd.ocfans.com.cn"
+     },{
+            "name":"链一",
+            "url":"https://www.bcones.com/v/login"
+     },{
+            "name":"BFW",
+            "url":"http://www.coin018.com"
+     },{
+            "name":"bbaex",
+            "url":"https://www.bbaex.com"
      },{
             "name":"GMA",
             "url":"http://www.tengweilh.com"
